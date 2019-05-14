@@ -20,6 +20,11 @@ self.addEventListener('install', async function () {
 self.addEventListener('fetch', event => {
     const request = event.request;
     const url = new URL(request.url);
+
+    if(url.pathname == 'api/roomData' || url.pathname == "api/roomSchedule"){
+        JSON.parse(request.body).id;
+    }
+
     if (url.origin === location.origin) {
         event.respondWith(cacheFirst(request));
     } else {

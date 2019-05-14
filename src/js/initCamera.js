@@ -23,10 +23,15 @@ QrScanner.hasCamera()
     })
 
 function init(){
-    const scanner = new QrScanner(video, result => console.log(result));
+    const scanner = new QrScanner(video, result => {
+        console.log(result);
+        scanner.stop();
+        //pop up and wait redirect
+    });
     scanner.start();
     video.addEventListener('loadedmetadata', function(e){
         console.log(video.videoWidth, video.videoHeight, document.width);
+        
         //body.style.width = video.videoWidth;
         //video.style.left = "calc(" + video.videoHeight + "px/-2 +" + document.width+"px)"
     });
