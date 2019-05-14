@@ -1,0 +1,20 @@
+{
+  "name": "skoda",
+  "version": "1.0.0",
+  "description": "správa zasedaček (PWA)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PWA;",
+    "qrcode;",
+    "camera;",
+    "responsive"
+  ],
+  "author": "Jan Nykl",
+  "license": "MIT",
+  "dependencies": {
+    "qr-scanner": "^1.1.1"
+  }
+}

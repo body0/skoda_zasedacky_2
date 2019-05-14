@@ -1,0 +1,10 @@
+{
+    "name": "Zasedačky Škoda",
+    "short_name": "Zasedačky",
+    "theme_color": "#ffffff",
+    "background_color": "#4AA82E",
+    "display": "standalone",
+    "Scope": "/",
+    "start_url": ".",
+    "splash_pages": null
+  }
