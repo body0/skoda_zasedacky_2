@@ -27,9 +27,11 @@
     margin: 3%;
     padding: 2%;
     text-align: center;
+    box-shadow: 1px 1px 5px#555555;
     
     background-color: #eee;
     font-family: Helvetica;
+    font-size: 3em;
 }
 .apRec .time{
     grid-area: time;
@@ -70,5 +72,5 @@ body{
   height: 100%;
   width: 100%;
   z-index: 10;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0);
 }
