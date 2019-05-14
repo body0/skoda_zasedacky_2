@@ -1,3 +1,7 @@
+:root {
+    --skodaGreen: #4AA82E;
+}
+
 .fixedButtonCircle{
     position: fixed;
     width: 20vw;
@@ -5,7 +9,38 @@
     bottom: 5vw;
     right: 5vw;
     border-radius: 50%;
-    background-color: #4AA82E; 
+    background-color: var(--skodaGreen); 
+
+    display: flex;
+    align-items: center;
+}
+.fixedButtonCircle * {
+    margin: auto;
+}
+.apRec{
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: 1fr  3fr;
+    grid-template-areas: 
+    "name name"
+    "owner time";
+    margin: 3%;
+    padding: 2%;
+    text-align: center;
+    
+    background-color: #eee;
+    font-family: Helvetica;
+}
+.apRec .time{
+    grid-area: time;
+
+}
+.apRec .name{
+    grid-area: name;
+    word-wrap: break-word;
+}
+.apRec .owner{
+    grid-area: owner;
 }
 .popUpBox{
     position: fixed;
