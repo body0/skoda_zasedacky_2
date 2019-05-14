@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zasedačky Škoda</title>
+    <link rel="manifest" href="../../manifest.json">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body style="background-color: grey;" >
+    <div class=" overlay">
+        <video id='video' autoplay style="
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;"></video>
+
+        <div id="qrButton" class="fixedButtonCircle">
+            <a href="qrCamera.html">X</a>
+        </div>
+    </div>
+    <script type="module" src="../js/initCamera.js"></script> 
+    <script type="module" src="../init.js"></script> 
+    <script src="../../sw.js"></script>
+</body>

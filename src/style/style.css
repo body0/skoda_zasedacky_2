@@ -5,4 +5,35 @@
     bottom: 5vw;
     right: 5vw;
     border-radius: 50%;
+    background-color: #4AA82E; 
+}
+.popUpBox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 70vh;
+}
+.exit{
+    position: absolute;
+    top: -1em;
+    right: 0.7em;
+    width: 10vw;
+    height: 10vh;
+}
+html, body{
+  min-height: 100%;
+}
+body{
+  position: relative;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
 }
