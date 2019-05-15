@@ -1,9 +1,9 @@
 # skoda_zasedacky
 PWA app for Škoda auto
 
-##
+##Technology
 ##Database API
-- /api/roomData
+- /api/roomData<br/>
     example request:
     ```
     {
@@ -25,7 +25,7 @@ PWA app for Škoda auto
         }
     }
     ```
-- /api/roomSchedule
+- /api/roomSchedule <br/>
     example request:
     ```
     {
@@ -47,7 +47,7 @@ PWA app for Škoda auto
         ]
     }
     ```
-- /api/getUserDescription
+- /api/getUserDescription<br/>
     example request:
     ```
     {
@@ -70,7 +70,7 @@ PWA app for Škoda auto
         ]
     }
     ```
-- /api/newUser
+- /api/newUser<br/>
     example request:
     ```
     {
@@ -78,8 +78,8 @@ PWA app for Škoda auto
         "password":<string>
     }
     ```
-    example response:
-        -if user allready exist, return 403(forbiden)
+    example response:<br/>
+        -if user allready exist, return 403(forbiden)<br/>
         -return sesion cookie
     ```
     {   
