@@ -80,3 +80,13 @@ html, body{
     width: 10vw;
     height: 10vh;
 }
+
+.utilityContainer{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+.roomInfo{
+    box-shadow: var(--mainShadow);
+}

@@ -1,6 +1,7 @@
 # skoda_zasedacky
 PWA app for Škoda auto
 
+##
 ##Database API
 - /api/roomData
     example request:
@@ -51,6 +52,7 @@ PWA app for Škoda auto
     ```
     {
         "userName":<string>
+        ?"password":<string>
     }
     ```
     example response:
@@ -68,4 +70,36 @@ PWA app for Škoda auto
         ]
     }
     ```
-- /api/registred
+- /api/newUser
+    example request:
+    ```
+    {
+        "userName":<string>
+        "password":<string>
+    }
+    ```
+    example response:
+        -if user allready exist, return 403(forbiden)
+        -return sesion cookie
+    ```
+    {   
+        "userId": <room id>
+        "email": <string>
+    }
+    ```
+- /api/getuserSession
+    example request:
+    ```
+    {
+        "userName":<string>
+        "password":<string>
+    }
+    ```
+    example response:
+        -return sesion cookie
+    ```
+    {   
+        "userId": <room id>
+        "email": <string>
+    }
+    ```
