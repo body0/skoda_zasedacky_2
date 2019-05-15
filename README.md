@@ -1,7 +1,7 @@
 # skoda_zasedacky
 PWA app for Škoda auto
 
-##Technology
+##Technology:<br/>
 ##Database API
 - /api/roomData<br/>
     example request:
@@ -87,7 +87,7 @@ PWA app for Škoda auto
         "email": <string>
     }
     ```
-- /api/getuserSession
+- /api/getuserSession<br/>
     example request:
     ```
     {
@@ -95,7 +95,7 @@ PWA app for Škoda auto
         "password":<string>
     }
     ```
-    example response:
+    example response:<br/>
         -return sesion cookie
     ```
     {   

@@ -1,0 +1,56 @@
+.top {
+    position: fixed;
+    width: 90vw;
+    background-color: #4ba82e;
+    padding: 5%;
+    
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.side{
+    position: absolute;
+    width: 60%;
+    min-height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #4ba82e;
+    overflow: hidden;
+    overflow-y: auto;
+    border-right: 2px  solid black;
+    left: -2px;
+    transition:width 250ms ease-in-out;
+}
+.clearBut{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.list{
+    margin: 5vw 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+
+    text-decoration-line: none;
+    display: flex;
+    flex-flow: column;
+    
+}
+.list *{
+    color: white;
+    cursor: none;
+    text-decoration: none;
+    padding: 1em;
+}
+.logo{
+    position: relative;
+    width: 100%;
+    height:auto;
+    
+    top: 0px;
+    left: 0px;
+}
+
