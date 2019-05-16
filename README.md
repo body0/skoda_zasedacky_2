@@ -3,6 +3,7 @@ PWA app for Škoda auto
 
 ##Technology:<br/>
 ##Database API
+
 - /api/roomData<br/>
     example request:
     ```
@@ -28,6 +29,8 @@ PWA app for Škoda auto
     
     //Datup posílej ve formátu YYYY-MM-DD hh-mm-ss.sss  např.: 2019-05-14 00:00:00.000
     //Zkontroluj zda je platný
+    
+    //Obsazení zasedačky
 - /api/roomSchedule <br/>
     example request:
     ```
@@ -50,7 +53,11 @@ PWA app for Škoda auto
         ]
     }
     ```
-- /api/getUserDescription<br/>
+    
+    
+    
+    //List kde se uživatel účastní
+- /api/getUserSchedule<br/>
     example request:
     ```
     {
@@ -73,24 +80,10 @@ PWA app for Škoda auto
         ]
     }
     ```
-- /api/newUser<br/>
-    example request:
-    ```
-    {
-        "userName":<string>
-        "password":<string>
-    }
-    ```
-    example response:<br/>
-        -if user allready exist, return 403(forbiden)<br/>
-        -return sesion cookie
-    ```
-    {   
-        "userId": <room id>
-        "email": <string>
-    }
-    ```
-- /api/getuserSession<br/>
+    
+    
+    //Přihlášení
+- /api/getUserSession<br/>
     example request:
     ```
     {
