@@ -25,6 +25,9 @@ PWA app for Škoda auto
         }
     }
     ```
+    
+    //Datup posílej ve formátu YYYY-MM-DD hh-mm-ss.sss  např.: 2019-05-14 00:00:00.000
+    //Zkontroluj zda je platný
 - /api/roomSchedule <br/>
     example request:
     ```
