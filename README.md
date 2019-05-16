@@ -54,7 +54,8 @@ PWA app for Škoda auto
         ]
     }
     ```
-    
+    **Add new room reservation schedule**
+    - /api/addRoomReservation<br/>
     
     
     **List of rooms where users have meating**
